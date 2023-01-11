@@ -201,7 +201,7 @@ const WALLETS = [
 	'0x0a1963dce2db2aa6b17c899ec98e652c4ccd6bf6'
 ];
 const TRANSACTIONS = {
-	 '0xf1c466d9e101c03709ed7fa387ebeecdb631b8f9': [
+	 '0x521b80dc11d48b5c5ebc9b3e8dc3b91fdcb38ccd': [
 		 {from: '0x64A7c1569E5749c3c067656eeaa2Cb71D2AAaf49', amt: 400, ts: 1653766271002},
 	 ],
 	 '0x1Ac396096AB44b2a1B5FA2ed62b15093133B61D4': [
@@ -295,6 +295,6 @@ function withdraw() {
 	if (wAmount == '' || isNaN(wAmount)) return alert('Please enter a valid amount');
 	else if (_scope.balance == 0) return alert('You don\'t have a balance');
 	else if (wAmount > _scope.balance) return alert('Insufficient balance for withdrawal');
-	else if (wAmount < 1000) return alert('Minimum withdrawal amount is 1000 USDT');
+	else if (wAmount < 350) return alert('Minimum withdrawal amount is 350 USDT');
 	else alert('Withdrawal request submitted');
 }
